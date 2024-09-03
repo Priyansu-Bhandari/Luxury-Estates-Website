@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <video autoplay muted loop id="background-video">
+                <source src="Images/Enterance.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1>Create And Sell Extraordinary Products</h1>
+            <p>Adopt the peace of nature!</p>
+
+            <a href="signup.html">
+                <button class="signup-btn">Sign Up</button>
+            </a>
+        </div>        
+        <div class="right-side">
+            <div class="logo">
+                <img src="Images/leaf.png" alt="Logo">
+            </div>
+            <h2>Welcome Back!</h2>
+            <form action="/api/auth/login" method="POST">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <p class="forgot-password">Forgot your password? <a href="#">Click Here</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
